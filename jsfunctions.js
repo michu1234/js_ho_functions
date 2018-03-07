@@ -13,4 +13,13 @@ function duplicates(arr){
 function maxNum(arr){
     return Math.max.apply(null,arr)
 }
-console.log(maxNum(tablica)); 
+
+// Last element of array
+
+function lastEl(arr){
+   let el = arr.slice(-1)[0];
+   return el;
+}
+
+console.log(lastEl(tablica)); 
+
