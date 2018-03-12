@@ -1,4 +1,4 @@
-let tablica = [1,2,3,33,3,4,5,0, false, "", "test"];
+let tablica = [31,2,3,33,3,4,5,0, false, "", "test"];
 
 // Remove duplicates from array
 
@@ -17,8 +17,20 @@ function maxNum(arr){
 // Last element of array
 
 function lastEl(arr){
-   let el = arr.slice(-1)[0];
-   return el;
+   return arr.slice(-1)[0];
+}
+
+// first element of array
+
+function firstEl(arr){
+    return arr.slice(0,1)
+}
+
+// first element and the rest
+
+function firstNrest(arr){
+    [first, ...rest] = arr;
+    return `${first} | ${rest}`;
 }
 
 // remove falsy values from array
@@ -27,5 +39,11 @@ function removeFalse(arr){
     return arr.filter(v=>v);
 }
 
-console.log(removeFalse(tablica)); 
+// remove element from arr
+
+function removeEl(arr, el){
+    return arr.filter(n=>n!==el);
+}
+
+console.log(removeEl(tablica, 3)); 
 
