@@ -1,4 +1,4 @@
-let tablica = [1,2,3,33,3,4,5];
+let tablica = [1,2,3,33,3,4,5,0, false, "", "test"];
 
 // Remove duplicates from array
 
@@ -21,5 +21,11 @@ function lastEl(arr){
    return el;
 }
 
-console.log(lastEl(tablica)); 
+// remove falsy values from array
+
+function removeFalse(arr){
+    return arr.filter(v=>v);
+}
+
+console.log(removeFalse(tablica)); 
 
