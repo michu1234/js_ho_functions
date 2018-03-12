@@ -1,4 +1,5 @@
 let tablica = [31,2,3,33,3,4,5,0, false, "", "test"];
+let tablica2 = [{key: 12}, {key: "abc"}, {key: false}];
 
 // Remove duplicates from array
 
@@ -45,5 +46,21 @@ function removeEl(arr, el){
     return arr.filter(n=>n!==el);
 }
 
-console.log(removeEl(tablica, 3)); 
+// print values
+
+function printValues(arr) {
+    let vals = [];
+    for (let a of arr){
+        vals.push(a.key);
+    }
+    return vals;
+}
+
+// print keys
+
+function printKeys(arr){
+ 
+}
+
+console.log(Array.from({length: 12}, (a,i) => i)); 
 
