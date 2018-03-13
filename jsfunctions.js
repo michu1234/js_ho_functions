@@ -1,5 +1,6 @@
 let tablica = [31,2,3,33,3,4,5,0, false, "", "test"];
 let tablica2 = [{key: 12}, {key2: "abc"}, {ke3y: false}];
+let obj1 = {key1: 1, key2: "abc", key3: false};
 
 // Remove duplicates from array
 
@@ -66,5 +67,11 @@ function printKeys(arr){
     return keys;
 }
 
-console.log(printKeys(tablica2)); 
+// put objects into array
+
+function toArray(obj){
+    return Object.entries(obj);
+}
+
+console.log(toArray(obj1)); 
 
